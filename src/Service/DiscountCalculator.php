@@ -8,7 +8,7 @@ class DiscountCalculator
     {
         // Vérification pour éviter les montants négatifs
         if ($totalAmount < 0) {
-            throw new \InvalidArgumentException("Le montant total ne peut pas être négatif.");
+            throw new \InvalidArgumentException('Le montant total ne peut pas être négatif.');
         }
 
         // Modification : La remise de 10% s'applique uniquement si le montant est STRICTEMENT supérieur à 100 €
